@@ -43,10 +43,10 @@ namespace Methods
             this.label4 = new System.Windows.Forms.Label();
             this.list_textbox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.removeList_btn = new System.Windows.Forms.Button();
-            this.listUpdate_txtbox = new System.Windows.Forms.TextBox();
             this.updateList_btn = new System.Windows.Forms.Button();
+            this.listUpdate_txtbox = new System.Windows.Forms.TextBox();
+            this.removeList_btn = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,14 +74,14 @@ namespace Methods
             this.nameTextBox.Location = new System.Drawing.Point(119, 42);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(138, 22);
-            this.nameTextBox.TabIndex = 2;
+            this.nameTextBox.TabIndex = 0;
             // 
             // num1_txtBox
             // 
             this.num1_txtBox.Location = new System.Drawing.Point(119, 139);
             this.num1_txtBox.Name = "num1_txtBox";
             this.num1_txtBox.Size = new System.Drawing.Size(138, 22);
-            this.num1_txtBox.TabIndex = 5;
+            this.num1_txtBox.TabIndex = 2;
             // 
             // label2
             // 
@@ -97,7 +97,7 @@ namespace Methods
             this.sumBTN.Location = new System.Drawing.Point(272, 139);
             this.sumBTN.Name = "sumBTN";
             this.sumBTN.Size = new System.Drawing.Size(101, 62);
-            this.sumBTN.TabIndex = 3;
+            this.sumBTN.TabIndex = 4;
             this.sumBTN.Text = "Sum";
             this.sumBTN.UseVisualStyleBackColor = true;
             this.sumBTN.Click += new System.EventHandler(this.sumBTN_Click);
@@ -107,14 +107,14 @@ namespace Methods
             this.num2_txtbox.Location = new System.Drawing.Point(119, 179);
             this.num2_txtbox.Name = "num2_txtbox";
             this.num2_txtbox.Size = new System.Drawing.Size(138, 22);
-            this.num2_txtbox.TabIndex = 6;
+            this.num2_txtbox.TabIndex = 3;
             // 
             // search_txtbox
             // 
             this.search_txtbox.Location = new System.Drawing.Point(119, 248);
             this.search_txtbox.Name = "search_txtbox";
             this.search_txtbox.Size = new System.Drawing.Size(138, 22);
-            this.search_txtbox.TabIndex = 9;
+            this.search_txtbox.TabIndex = 5;
             // 
             // label3
             // 
@@ -130,7 +130,7 @@ namespace Methods
             this.searchBTN.Location = new System.Drawing.Point(272, 241);
             this.searchBTN.Name = "searchBTN";
             this.searchBTN.Size = new System.Drawing.Size(101, 41);
-            this.searchBTN.TabIndex = 7;
+            this.searchBTN.TabIndex = 6;
             this.searchBTN.Text = "Find";
             this.searchBTN.UseVisualStyleBackColor = true;
             this.searchBTN.Click += new System.EventHandler(this.searchBTN_Click);
@@ -141,7 +141,7 @@ namespace Methods
             this.list_button.Location = new System.Drawing.Point(59, 123);
             this.list_button.Name = "list_button";
             this.list_button.Size = new System.Drawing.Size(57, 39);
-            this.list_button.TabIndex = 10;
+            this.list_button.TabIndex = 2;
             this.list_button.Text = "+";
             this.list_button.UseVisualStyleBackColor = true;
             this.list_button.Click += new System.EventHandler(this.list_button_Click);
@@ -160,7 +160,7 @@ namespace Methods
             this.list_textbox.Location = new System.Drawing.Point(15, 86);
             this.list_textbox.Name = "list_textbox";
             this.list_textbox.Size = new System.Drawing.Size(221, 22);
-            this.list_textbox.TabIndex = 12;
+            this.list_textbox.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -174,9 +174,38 @@ namespace Methods
             this.groupBox1.Location = new System.Drawing.Point(417, 16);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(554, 305);
-            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "List of members";
+            // 
+            // updateList_btn
+            // 
+            this.updateList_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateList_btn.Location = new System.Drawing.Point(59, 232);
+            this.updateList_btn.Name = "updateList_btn";
+            this.updateList_btn.Size = new System.Drawing.Size(126, 39);
+            this.updateList_btn.TabIndex = 5;
+            this.updateList_btn.Text = "Update List";
+            this.updateList_btn.UseVisualStyleBackColor = true;
+            this.updateList_btn.Click += new System.EventHandler(this.updateList_btn_Click);
+            // 
+            // listUpdate_txtbox
+            // 
+            this.listUpdate_txtbox.Location = new System.Drawing.Point(15, 196);
+            this.listUpdate_txtbox.Name = "listUpdate_txtbox";
+            this.listUpdate_txtbox.Size = new System.Drawing.Size(221, 22);
+            this.listUpdate_txtbox.TabIndex = 4;
+            // 
+            // removeList_btn
+            // 
+            this.removeList_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeList_btn.Location = new System.Drawing.Point(132, 123);
+            this.removeList_btn.Name = "removeList_btn";
+            this.removeList_btn.Size = new System.Drawing.Size(57, 39);
+            this.removeList_btn.TabIndex = 3;
+            this.removeList_btn.Text = "-";
+            this.removeList_btn.UseVisualStyleBackColor = true;
+            this.removeList_btn.Click += new System.EventHandler(this.removeList_btn_Click);
             // 
             // listBox1
             // 
@@ -185,37 +214,8 @@ namespace Methods
             this.listBox1.Location = new System.Drawing.Point(253, 19);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(280, 276);
-            this.listBox1.TabIndex = 13;
+            this.listBox1.TabIndex = 6;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // removeList_btn
-            // 
-            this.removeList_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeList_btn.Location = new System.Drawing.Point(132, 123);
-            this.removeList_btn.Name = "removeList_btn";
-            this.removeList_btn.Size = new System.Drawing.Size(57, 39);
-            this.removeList_btn.TabIndex = 14;
-            this.removeList_btn.Text = "-";
-            this.removeList_btn.UseVisualStyleBackColor = true;
-            this.removeList_btn.Click += new System.EventHandler(this.removeList_btn_Click);
-            // 
-            // listUpdate_txtbox
-            // 
-            this.listUpdate_txtbox.Location = new System.Drawing.Point(15, 196);
-            this.listUpdate_txtbox.Name = "listUpdate_txtbox";
-            this.listUpdate_txtbox.Size = new System.Drawing.Size(221, 22);
-            this.listUpdate_txtbox.TabIndex = 15;
-            // 
-            // updateList_btn
-            // 
-            this.updateList_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateList_btn.Location = new System.Drawing.Point(59, 232);
-            this.updateList_btn.Name = "updateList_btn";
-            this.updateList_btn.Size = new System.Drawing.Size(126, 39);
-            this.updateList_btn.TabIndex = 16;
-            this.updateList_btn.Text = "Update List";
-            this.updateList_btn.UseVisualStyleBackColor = true;
-            this.updateList_btn.Click += new System.EventHandler(this.updateList_btn_Click);
             // 
             // Form1
             // 

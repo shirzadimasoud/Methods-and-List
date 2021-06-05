@@ -84,8 +84,7 @@ namespace Methods
 
         private void removeList_btn_Click(object sender, EventArgs e)
         {
-            int index = listBox1.SelectedIndex;
-            listBox1.Items.RemoveAt(index);
+            listBox1.Items.RemoveAt(listBox1.SelectedIndex);
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
